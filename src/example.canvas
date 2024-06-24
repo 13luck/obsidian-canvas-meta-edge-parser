@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"8220e020baa77e48","type":"text","text":"# rollDice\n\nThe player rolls the dice 🎲","x":-145,"y":-165,"width":280,"height":125,"color":"6"},
+		{"id":"945390a7d9442ffc","type":"text","text":"# defineNumber","x":-680,"y":-165,"width":280,"height":125,"color":"6"},
+		{"id":"bfcfe833f8ea4ecc","type":"text","text":"# PlayerReady\n","x":-400,"y":-340,"width":270,"height":120,"color":"4"},
+		{"id":"91ece5c4b3f64f56","type":"text","text":"# NumberDefined\n\nThe number is chosen by the game","x":-400,"y":20,"width":270,"height":140,"color":"4"},
+		{"id":"f818aa60b58b4e6a","type":"text","text":"# WinGame","x":-145,"y":240,"width":280,"height":80,"color":"4"}
+	],
+	"edges":[
+		{"id":"b5bbaea20bb2fb7d","fromNode":"bfcfe833f8ea4ecc","fromSide":"left","toNode":"945390a7d9442ffc","toSide":"top"},
+		{"id":"963db64cad89e1bc","fromNode":"945390a7d9442ffc","fromSide":"bottom","toNode":"91ece5c4b3f64f56","toSide":"left"},
+		{"id":"7d2cc55e9b88f8fd","fromNode":"91ece5c4b3f64f56","fromSide":"right","toNode":"8220e020baa77e48","toSide":"bottom"},
+		{"id":"769e6e05f0c038b7","fromNode":"8220e020baa77e48","fromSide":"top","toNode":"bfcfe833f8ea4ecc","toSide":"right","color":"1","label":"no match,\nnext player"},
+		{"id":"334e37e6bec56eab","fromNode":"8220e020baa77e48","fromSide":"right","toNode":"f818aa60b58b4e6a","toSide":"right","color":"3","label":"win 🏆"}
+	]
+}
